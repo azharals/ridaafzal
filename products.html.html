@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<!-- Similar head section as index.html -->
+<body>
+    <!-- Same header as index.html -->
+
+    <section class="products">
+        <h2 class="section-title">جميع المنتجات</h2>
+        
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">الكل</button>
+            <button class="filter-btn" data-filter="shoes">أحذية</button>
+            <button class="filter-btn" data-filter="shemagh">شماغ وعقال</button>
+            <button class="filter-btn" data-filter="bisht">بشوت</button>
+        </div>
+        
+        <div class="product-grid">
+            <!-- Shoes Section -->
+            <div class="product-card" data-category="shoes" id="shoes">
+                <img src="assets/images/products/shoe1.jpg" alt="حذاء" class="product-img">
+                <div class="product-info">
+                    <h3>حذاء جلد طبيعي</h3>
+                    <div class="price">249 ريال</div>
+                    <button class="btn" onclick="addToCart('حذاء جلد طبيعي', 249)">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Shemagh Section -->
+            <div class="product-card" data-category="shemagh" id="shemagh">
+                <img src="assets/images/products/shemagh1.jpg" alt="شماغ" class="product-img">
+                <div class="product-info">
+                    <h3>شماغ أصلي</h3>
+                    <div class="price">189 ريال</div>
+                    <button class="btn" onclick="addToCart('شماغ أصلي', 189)">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Bisht Section -->
+            <div class="product-card" data-category="bisht" id="bisht">
+                <img src="assets/images/products/bisht1.jpg" alt="بشت" class="product-img">
+                <div class="product-info">
+                    <h3>بشت مطرز ذهبي</h3>
+                    <div class="price">1299 ريال</div>
+                    <button class="btn" onclick="addToCart('بشت مطرز ذهبي', 1299)">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Add more products following the same pattern -->
+        </div>
+    </section>
+
+    <!-- Same footer as index.html -->
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الردا الفضل - ملابس رجالية تقليدية</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            توصيل مجاني للطلبات فوق 300 ريال في الطائف
+        </div>
+        <div class="main-header">
+            <div class="logo">الردا <span>الفضل</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="header-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-user"></i>
+                <a href="#cart"><i class="fas fa-shopping-cart"><span id="cart-count">0</span></i></a>
+            </div>
+        </div>
+    </header>
+    
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/images/hero.jpg');">
+        <h1>أزياء رجالية أصيلة</h1>
+        <p>اكتشف تراث الأناقة في كل قطعة نقدمها لكم منذ 1985</p>
+        <a href="products.html" class="btn">تصفح المنتجات</a>
+    </section>
+    
+    <section class="categories">
+        <h2 class="section-title">أقسام المتجر</h2>
+        <div class="category-grid">
+            <div class="category-card">
+                <img src="assets/images/products/shoes.jpg" alt="أحذية رجالية" class="category-img">
+                <div class="category-info">
+                    <h3>أحذية تقليدية</h3>
+                    <a href="products.html#shoes" class="btn">استكشف</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="assets/images/products/shemagh.jpg" alt="شماغ" class="category-img">
+                <div class="category-info">
+                    <h3>شماغ وعقال</h3>
+                    <a href="products.html#shemagh" class="btn">استكشف</a>
+                </div>
+            </div>
+            <div class="category-card">
+                <img src="assets/images/products/bisht.jpg" alt="بشت" class="category-img">
+                <div class="category-info">
+                    <h3>بشوت وعبي</h3>
+                    <a href="products.html#bisht" class="btn">استكشف</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="products">
+        <h2 class="section-title">أفضل المنتجات</h2>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <img src="assets/images/products/shoe1.jpg" alt="حذاء تقليدي" class="product-img">
+                <div class="product-info">
+                    <h3>حذاء جلد طبيعي</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">249 ريال</div>
+                    <button class="btn" onclick="addToCart('حذاء جلد طبيعي', 249)">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="product-card">
+                <img src="assets/images/products/shemagh1.jpg" alt="شماغ" class="product-img">
+                <div class="product-info">
+                    <h3>شماغ أصلي</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">189 ريال</div>
+                    <button class="btn" onclick="addToCart('شماغ أصلي', 189)">أضف إلى السلة</button>
+                </div>
+            </div>
+            
+            <!-- Product 3 -->
+            <div class="product-card">
+                <img src="assets/images/products/bisht1.jpg" alt="بشت" class="product-img">
+                <div class="product-info">
+                    <h3>بشت مطرز</h3>
+                    <div class="rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">1299 ريال</div>
+                    <button class="btn" onclick="addToCart('بشت مطرز', 1299)">أضف إلى السلة</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>الردا الفضل</h3>
+                <p>متجرنا يقدم أجود أنواع الملابس الرجالية التقليدية منذ 1985 في الطائف</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-snapchat-ghost"></i></a>
+                    <a href="https://wa.me/966582020901"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h3>روابط سريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="products.html">المنتجات</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>خدمة العملاء</h3>
+                <ul>
+                    <li><a href="#">سياسة الإرجاع</a></li>
+                    <li><a href="#">الشروط والأحكام</a></li>
+                    <li><a href="#">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>اتصل بنا</h3>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> شارع التلفزيون، الطائف</li>
+                    <li><i class="fas fa-phone"></i> +966 58 202 0901</li>
+                    <li><i class="fab fa-whatsapp"></i> واتساب: 966582020901+</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 الردا الفضل. جميع الحقوق محفوظة.
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
